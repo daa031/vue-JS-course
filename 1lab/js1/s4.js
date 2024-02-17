@@ -1,7 +1,7 @@
 let Counter = {
     count: 5,
-    add: function(value){
-        this.count += Number(value)
+    add (value){
+        Counter.count += Number(value)
     },
     sub: function(value){
         this.count -= Number(value)
