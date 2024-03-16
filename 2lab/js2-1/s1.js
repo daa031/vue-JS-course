@@ -1,16 +1,19 @@
-// let count = localStorage.getItem('loadCount') || 0;
-let count;
+let count
 if (localStorage.getItem('loadCount')){
-    count = localStorage.getItem('loadCount');
+    count = localStorage.getItem('loadCount')
 } else {
-    count = 0;
+    count = 0
 }
 
-count++;
+// let count = localStorage.getItem('loadCount') || 0
 
-localStorage.setItem('loadCount', count);
 
-// Выводим информацию пользователю
-alert('Вы загрузили/обновили страницу ' + count + ' раз.');
+count++
 
-//localStorage.clear();
+localStorage.setItem('loadCount', count)
+
+alert("обновили страницу " + count + " раз.")
+
+//localStorage.clear()
+
+

@@ -1,0 +1,64 @@
+.logo h1{
+  position: fixed;
+  text-align: center;
+  width: 100%;
+
+}
+.menu {
+  position: fixed;
+  top: 100px;
+  left: 0;
+  width: 100%;
+  background-color: #999;
+  padding: 10px 0px 10px 20px;
+  text-align: center;
+}
+
+.menu ul li {
+  display: inline;
+  margin-right: 50px;
+}
+
+.menu ul li a {
+  color: black;
+}
+
+.content {
+  padding-top: 200px;
+}
+
+body {
+  margin: 0;
+}
+
+.characteristic {
+  text-align: center;
+  color: black;
+  background-color: #999;
+  padding: 5px 0px 300px 20px;
+}
+
+.boxContainer {
+  padding: 20px 0px 300px 0px;
+  display: flex;
+  width: 100%;
+  gap: 30px; /* Расстояние между колонками */
+}
+
+.box {
+  width: 33.33%;
+  text-align: center;
+  color: black;
+  background-color: #999;
+  padding: 20px 0px 300px 0px;
+}
+
+footer {
+  background-color: #999;
+  color: black;
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  bottom: 2px;
+  padding: 3px 0px;
+}
