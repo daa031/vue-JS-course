@@ -1,0 +1,43 @@
+h1 {
+  text-align: center;
+  font-size: 40px;
+}
+header {
+  text-align: center;
+  background-color: lightgray;
+  height: 50px;
+  margin: 10px;
+}
+header li {
+  display: inline-block;
+  padding: 25px 10px;
+}
+header a:link {
+  color: purple;
+  font-size: 20px;
+}
+p {
+  text-align: center;
+  background-color: lightgray;
+  height: 200px;
+  margin: 20px;
+  padding-top: 20px;
+  font-size: 20px;
+}
+.column {
+  text-align: center;
+  background-color: lightgray;
+  height: 300px;
+  margin: 0px;
+  width: 375px;
+  display: inline-block;
+  font-size: 20px;
+  margin: 10px 20px;
+}
+footer {
+  text-align: center;
+  background-color: lightgray;
+  height: 50px;
+  margin: 20px 20px;
+  padding-top: 20px;
+}

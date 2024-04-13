@@ -10,8 +10,7 @@ function rightClickHandler(e){
 
 body.addEventListener("selectstart", selectHandler)
 
-//хз поч не работает
-//body.addEventListener("contextmenu", rightClickHandler)
+body.addEventListener("contextmenu", rightClickHandler)
 
 
 
@@ -32,16 +31,14 @@ let clicker = document.querySelector(".clicker")
 let cleanCounter = document.querySelector(".cleanCounter")
 let counter = document.querySelector(".counter")
 let averageValue = document.querySelector(".averageValue")
-
+let count2 
 counter.textContent = count
 let t1 = new Date()
 
 function clickHandler(){
     console.log("click")
     count++
-    if (count == 1){
-        t1 = new Date()
-    }
+
     localStorage.setItem('loadCount', count)   
     counter.textContent = count
 
@@ -56,11 +53,9 @@ clicker.addEventListener("click", clickHandler)
 cleanCounter.addEventListener("click", cleanCounterHandler)
 
 function updateAverageValue(){
-    let t2 = new Date()
-    let avg =  count / ((t2.getTime() - t1.getTime()) /1000)
-    averageValue.textContent = avg.toFixed(2)
+    averageValue.textContent = count - count2
+    count2  = count 
 }
-
 
 
 setInterval(updateAverageValue, 1000);
@@ -88,6 +83,7 @@ function plusClickHandler(){
     console.log("plus")
 }
 plus.addEventListener("click",plusClickHandler)
+
 
 
 
