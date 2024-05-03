@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 2</title>
+</head>
+<body>
+    <div id="app">
+        <div>Clicked {{ count }} times</div>
+        <button v-on:click="onClick">Click!</button>
+    </div>
+
+    <script type="importmap">
+        {
+            "imports": {
+                "vue": "https://unpkg.com/vue@3/dist/vue.esm-browser.js"
+            }
+        }
+    </script>
+
+    <script type="module">
+        import { createApp, ref } from 'vue'
+
+        const app = createApp({
+            data(){
+                return{
+                    count: 0
+                }
+            },
+            methods: {
+                onClick() {
+                    this.count++
+                }
+            }
+        })
+
+        app.mount("#app")
+    </script>
+</body>
+</html>
